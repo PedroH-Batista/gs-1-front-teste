@@ -1,0 +1,164 @@
+/* Cores padrão do Figma */
+:root {
+  --cor-branca: #ffffff;
+  --cor-fundo: #1e1e1e;
+  --cor-destaque: #051357;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  color: var(--cor-branca);
+  background: var(--cor-fundo);
+  position: relative;
+  overflow-x: hidden;
+}
+
+.background-animation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("assets/fundo-animado.gif") center center / cover no-repeat;
+  z-index: -1;
+  opacity: 0.3;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  position: fixed;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 10;
+  height: 5rem;
+}
+
+.logo {
+  height: 13rem;
+}
+
+.links {
+  position: relative;
+  right: 5rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--cor-branca);
+  font-weight: 500;
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 2rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.hero p {
+  max-width: 600px;
+  font-size: 1.2rem;
+}
+
+.btn {
+  margin-top: 1rem;
+  padding: 1rem 2rem;
+  background-color: var(--cor-destaque);
+  color: var(--cor-branca);
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #0d23a6;
+}
+
+section {
+  padding: 6rem 2rem;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.6s ease-out;
+}
+
+section.ativo {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+#grafico canvas {
+  max-width: 90%;
+  margin-top: 2rem;
+}
+
+.impacto {
+  background-color: #151515;
+}
+
+.impacto h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.impacto p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.footer {
+  text-align: center;
+  padding: 2rem;
+  background: #000;
+  color: #999;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.95);
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    display: none;
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo {
+    margin-bottom: 10px;
+  }
+}
