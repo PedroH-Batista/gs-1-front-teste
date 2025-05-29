@@ -34,11 +34,11 @@ body {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.7);
   z-index: 10;
-  height: 5rem;
+  height: 3rem;
 }
 
 .logo {
-  height: 13rem;
+  height: 9.5rem;
 }
 
 .links {
