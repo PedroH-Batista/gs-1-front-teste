@@ -76,6 +76,14 @@ body {
   padding-top: 2rem;
 }
 
+.nome-logo {
+  position: relative;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--cor-destaque);
+  right: 38.3rem;
+}
+
 .links {
   position: relative;
   right: 5rem;
@@ -162,7 +170,7 @@ nav ul li a {
   transition: background-color 0.3s;
   z-index: 1;
   right: 40rem;
-  bottom: 1rem;
+  top: 8rem;
 }
 
 .btn:hover {
