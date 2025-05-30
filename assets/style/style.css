@@ -6,8 +6,13 @@
   --cor-alternativa: #010620;
 }
 
-body {
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
   font-family: "Poppins", sans-serif;
   color: var(--cor-branca);
   background: var(--cor-fundo);
@@ -157,7 +162,7 @@ nav ul li a {
   transition: background-color 0.3s;
   z-index: 1;
   right: 40rem;
-  bottom: 3rem;
+  bottom: 1rem;
 }
 
 .btn:hover {
@@ -172,7 +177,7 @@ nav ul li a {
   color: var(--cor-alternativa);
   z-index: 1;
   border-radius: 10px;
-  top: 17rem;
+  top: 20rem;
   text-align: center;
   padding: 1rem;
 }
@@ -199,7 +204,7 @@ nav ul li a {
   height: 10rem;
   position: relative;
   z-index: 2;
-  left: 24.4rem;
+  left: 23rem;
   bottom: 6rem;
 }
 
@@ -215,7 +220,7 @@ nav ul li a {
   height: 10rem;
   position: relative;
   z-index: 2;
-  left: 45rem;
+  left: 43rem;
   bottom: 16rem;
 }
 
@@ -245,9 +250,22 @@ section.ativo {
   transform: translateY(0px);
 }
 
+.grafico {
+  display: flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#texto-grafico {
+  position: relative;
+  top: 10rem;
+}
+
 #grafico canvas {
   position: relative;
-  left: 5.5rem;
+  top: 16rem;
   max-width: 90%;
   margin-top: 2rem;
 }
@@ -257,6 +275,7 @@ section.ativo {
 }
 
 .impacto h2 {
+  top: 10rem;
   font-size: 2rem;
   margin-bottom: 1rem;
 }
@@ -265,6 +284,55 @@ section.ativo {
   font-size: 1.2rem;
   max-width: 800px;
   margin: 0 auto;
+}
+
+.tecnologia {
+  position: relative;
+  width: 50rem;
+  height: 70rem;
+  left: 35rem;
+  top: 17rem;
+}
+
+.slideshow-container {
+  position: relative;
+  width: 80%;
+  max-width: 800px;
+  margin: auto;
+  top: 2rem;
+}
+
+.slide {
+  display: none;
+}
+
+.slide:first-child {
+  display: block;
+}
+
+img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.prev {
+  left: 0;
+}
+.next {
+  right: 0;
 }
 
 .footer {

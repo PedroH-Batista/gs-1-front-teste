@@ -65,3 +65,37 @@ const enchenteChart = new Chart(ctx, {
     },
   },
 });
+
+let slideIndex = 0;
+
+function mostrarSlides() {
+  let slides = document.querySelectorAll(".slide");
+
+  slides.forEach((slide) => (slide.style.display = "none"));
+
+  slideIndex++;
+  if (slideIndex > slides.length) slideIndex = 1;
+
+  slides[slideIndex - 1].style.display = "block";
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  let slides = document.querySelectorAll(".slide");
+  if (slides.length > 0) {
+    slides.forEach((slide) => (slide.style.display = "none"));
+    slides[0].style.display = "block";
+  }
+});
+
+function mudarSlide(n) {
+  slideIndex += n;
+  let slides = document.querySelectorAll(".slide");
+
+  if (slideIndex > slides.length) slideIndex = 1;
+  if (slideIndex < 1) slideIndex = slides.length;
+
+  slides.forEach((slide) => (slide.style.display = "none"));
+  slides[slideIndex - 1].style.display = "block";
+}
+
+mostrarSlides();
