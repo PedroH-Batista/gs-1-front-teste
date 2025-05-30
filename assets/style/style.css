@@ -3,6 +3,7 @@
   --cor-branca: #ffffff;
   --cor-fundo: #1e1e1e;
   --cor-destaque: #051357;
+  --cor-alternativa: #010620;
 }
 
 body {
@@ -48,21 +49,26 @@ body {
 
 .navbar {
   display: flex;
+  position: relative;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
   position: fixed;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0);
+  width: 100rem;
   z-index: 10;
-  height: 3rem;
+  height: 5rem;
+  background-color: #00000088;
+  border-radius: 10px;
+  top: 2rem;
+  left: 10rem;
 }
 
 .logo {
   position: relative;
-  top: 1rem;
+  bottom: 1rem;
   right: 3rem;
-  height: 9.5rem;
+  height: 9rem;
+  padding-top: 2rem;
 }
 
 .links {
@@ -82,6 +88,10 @@ nav ul li a {
   font-weight: 500;
 }
 
+.links a:hover {
+  color: var(--cor-destaque);
+}
+
 .hero {
   height: 100vh;
   display: flex;
@@ -93,16 +103,50 @@ nav ul li a {
 }
 
 .hero h1 {
+  position: relative;
   font-size: 3rem;
+  font-weight: bold;
+  z-index: 2;
+  color: #ffffff;
+  bottom: 1rem;
+  right: 23rem;
+}
+
+.fundo {
+  display: flex;
+  background-image: url("imagemFundo.png");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: auto;
+}
+
+.fundo {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.texto-sobre {
+  position: relative;
+  z-index: 2;
+  font-size: 2em;
   font-weight: bold;
 }
 
-.hero p {
-  max-width: 600px;
-  font-size: 1.2rem;
-}
-
 .btn {
+  position: relative;
   margin-top: 1rem;
   padding: 1rem 2rem;
   background-color: var(--cor-destaque);
@@ -111,10 +155,81 @@ nav ul li a {
   border-radius: 8px;
   font-weight: bold;
   transition: background-color 0.3s;
+  z-index: 1;
+  right: 40rem;
+  bottom: 3rem;
 }
 
 .btn:hover {
   background-color: #0d23a6;
+}
+
+.card {
+  position: relative;
+  height: 17rem;
+  width: 60rem;
+  background-color: #ffffff;
+  color: var(--cor-alternativa);
+  z-index: 1;
+  border-radius: 10px;
+  top: 17rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+.sobre1 {
+  width: 13rem;
+  height: 10rem;
+  position: relative;
+  color: #010620;
+  z-index: 2;
+  top: 4rem;
+  left: 2rem;
+}
+
+.emoji-terra {
+  position: relative;
+  height: 2rem;
+  width: 2rem;
+  bottom: 3rem;
+}
+
+.sobre2 {
+  width: 13rem;
+  height: 10rem;
+  position: relative;
+  z-index: 2;
+  left: 24.4rem;
+  bottom: 6rem;
+}
+
+.emoji-semear {
+  position: relative;
+  height: 2rem;
+  width: 2rem;
+  bottom: 3rem;
+}
+
+.sobre3 {
+  width: 13rem;
+  height: 10rem;
+  position: relative;
+  z-index: 2;
+  left: 45rem;
+  bottom: 16rem;
+}
+
+.emoji-alerta {
+  position: relative;
+  height: 2rem;
+  width: 2rem;
+  bottom: 3rem;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  text-indent: 0;
 }
 
 section {
