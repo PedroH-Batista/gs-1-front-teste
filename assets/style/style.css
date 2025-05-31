@@ -403,11 +403,53 @@ img {
 
 .publico-alvo {
   position: relative;
-  height: 30rem;
-  width: 40rem;
-  left: 10rem;
-  top: 10rem;
+}
+
+.publico-h2 {
+  position: relative;
+  top: 12rem;
+  font-size: 5rem;
+}
+
+.publico-h3 {
+  position: relative;
+  top: 26rem;
+  right: 37rem;
+  font-size: 6rem;
+}
+
+.text-publico-1 {
+  position: relative;
+  top: 30rem;
+  width: 10rem;
+  text-align: left;
+  left: 2rem;
+}
+
+.text-publico-NOAH {
+  position: relative;
+  right: 40rem;
+  top: 27rem;
+  font-size: 3rem;
+}
+
+.text-publico-2 {
+  position: relative;
+  text-align: left;
+  width: 20rem;
+  height: 10rem;
+  padding: 2rem;
+  color: #010620;
+  background-color: var(--cor-branca);
   border-radius: 10px;
+  bottom: 15rem;
+  left: 90rem;
+}
+
+.video-1 {
+  position: relative;
+  top: 2rem;
+  width: 23rem;
 }
 
 .beneficios {
@@ -416,7 +458,7 @@ img {
   width: 40rem;
   background-color: #1e1e1e;
   left: 60rem;
-  top: 1rem;
+  top: 50rem;
   border-radius: 10px;
 }
 
@@ -426,7 +468,7 @@ img {
   width: 40rem;
   background-color: #1e1e1e;
   left: 40rem;
-  top: 10rem;
+  top: 20rem;
   border-radius: 10px;
 }
 
