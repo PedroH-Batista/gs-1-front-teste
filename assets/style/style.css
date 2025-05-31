@@ -80,8 +80,8 @@ body {
   position: relative;
   font-size: 2rem;
   font-weight: 700;
-  color: var(--cor-destaque);
-  right: 38.3rem;
+  left: 2rem;
+  color: var(--cor-branca);
 }
 
 .links {
@@ -169,8 +169,7 @@ nav ul li a {
   font-weight: bold;
   transition: background-color 0.3s;
   z-index: 1;
-  right: 40rem;
-  top: 8rem;
+  top: 15rem;
 }
 
 .btn:hover {
@@ -181,11 +180,10 @@ nav ul li a {
   position: relative;
   height: 17rem;
   width: 60rem;
-  background-color: #ffffff;
-  color: var(--cor-alternativa);
+  background-color: #ffffff96;
   z-index: 1;
   border-radius: 10px;
-  top: 20rem;
+  top: 16.7rem;
   text-align: center;
   padding: 1rem;
 }
@@ -212,6 +210,7 @@ nav ul li a {
   height: 10rem;
   position: relative;
   z-index: 2;
+  color: #010620;
   left: 23rem;
   bottom: 6rem;
 }
@@ -228,6 +227,7 @@ nav ul li a {
   height: 10rem;
   position: relative;
   z-index: 2;
+  color: #010620;
   left: 43rem;
   bottom: 16rem;
 }
@@ -260,15 +260,22 @@ section.ativo {
 
 .grafico {
   display: flex;
-  display: flex;
+  position: relative;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  width: 100rem;
+  bottom: 17rem;
+  left: 10rem;
 }
 
 #texto-grafico {
   position: relative;
   top: 10rem;
+  transform: rotate(-90deg);
+  right: 46rem;
+  top: 42rem;
+  color: #ffffff46;
 }
 
 #grafico canvas {
@@ -278,40 +285,24 @@ section.ativo {
   margin-top: 2rem;
 }
 
-.impacto {
-  background-color: #151515;
-}
-
-.impacto h2 {
-  top: 10rem;
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-.impacto p {
-  font-size: 1.2rem;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.tecnologia {
-  position: relative;
-  width: 50rem;
-  height: 70rem;
-  left: 35rem;
-  top: 17rem;
-}
-
 .slideshow-container {
   position: relative;
-  width: 80%;
-  max-width: 800px;
-  margin: auto;
-  top: 2rem;
+  width: 50rem;
+  margin: 0 auto;
+  overflow: hidden;
+  top: 13rem;
+  right: 45rem;
 }
 
 .slide {
   display: none;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
 .slide:first-child {
@@ -334,6 +325,8 @@ img {
   padding: 10px;
   border: none;
   cursor: pointer;
+  z-index: 2;
+  border-radius: 50%;
 }
 
 .prev {
@@ -343,9 +336,105 @@ img {
   right: 0;
 }
 
+.impacto {
+  position: relative;
+  top: 10rem;
+}
+
+.impacto h2 {
+  font-size: 10rem;
+  margin-bottom: 1rem;
+}
+
+.impacto p {
+  position: relative;
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.tecnologia {
+  display: flex;
+  position: relative;
+}
+
+.tecnologia h2 {
+  position: relative;
+  font-size: 10rem;
+  left: 42rem;
+}
+
+.text-noah {
+  display: flex;
+}
+
+.text-noah-1 {
+  position: relative;
+  text-align: left;
+  font-size: 1.5rem;
+  height: 12rem;
+  width: 15rem;
+  padding: 1rem 1rem;
+  border-radius: 10px;
+  left: 40rem;
+  top: 15rem;
+}
+
+.line-text-noah {
+  position: absolute;
+  left: 72rem;
+  border: 1px solid rgba(255, 255, 255, 0.281);
+  top: 32rem;
+  width: 45rem;
+  height: 1px;
+}
+
+.text-noah-2 {
+  position: relative;
+  text-align: left;
+  font-size: 1.5rem;
+  height: 12rem;
+  width: 15rem;
+  padding: 1rem 1rem;
+  border-radius: 10px;
+  left: 50rem;
+  top: 30rem;
+}
+
+.publico-alvo {
+  position: relative;
+  height: 30rem;
+  width: 40rem;
+  left: 10rem;
+  top: 10rem;
+  border-radius: 10px;
+}
+
+.beneficios {
+  position: relative;
+  height: 30rem;
+  width: 40rem;
+  background-color: #1e1e1e;
+  left: 60rem;
+  top: 1rem;
+  border-radius: 10px;
+}
+
+.solucao {
+  position: relative;
+  height: 30rem;
+  width: 40rem;
+  background-color: #1e1e1e;
+  left: 40rem;
+  top: 10rem;
+  border-radius: 10px;
+}
+
 .footer {
+  position: relative;
   text-align: center;
   padding: 2rem;
+  top: 40rem;
   background: #000;
   color: #999;
   font-size: 0.9rem;
