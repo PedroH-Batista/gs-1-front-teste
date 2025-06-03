@@ -492,12 +492,22 @@ img {
 }
 
 .solucao {
+  display: flex;
+}
+
+.solucao-h2 {
   position: relative;
-  height: 30rem;
-  width: 40rem;
-  left: 40rem;
-  top: 30rem;
-  border-radius: 10px;
+  width: 100rem;
+  left: 30rem;
+  top: 17rem;
+  font-size: 5rem;
+}
+
+.solucao-p1 {
+  position: relative;
+  width: 100rem;
+  top: 25rem;
+  right: 27rem;
 }
 
 .footer {
